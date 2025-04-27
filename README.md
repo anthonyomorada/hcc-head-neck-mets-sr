@@ -12,7 +12,7 @@ This repository contains all methods, materials, and results related to a system
 - `/full-text-review/`: Included and excluded full-text articles
 - `/data-extraction/`: Data extraction forms and extracted datasets
 - `/references/`: Citation files (`.bib`) and citation style files (`.csl`)
-- `/manuscripts/`: Drafts of the case report and systematic review manuscripts
+- `/publication_files/`: Drafts of the systematic review, case report, ILTS poster, final figures, and tables
 
 ---
 
