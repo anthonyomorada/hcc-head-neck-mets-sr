@@ -1,0 +1,5 @@
+{
+    "markdown.marp.themes": [
+        "./publication_files/poster/themes/poster.css"
+    ]
+}

@@ -1,0 +1,59 @@
+# Abstract Screening Instructions (Rayyan)
+
+This document outlines standardized procedures for screening abstracts using **Rayyan** as part of the systematic review titled:
+
+**"Uncommon Sites of Hepatocellular Carcinoma Metastasis: A Systematic Review of Salivary Gland Involvement."**
+
+## 🔍 Review Platform
+
+All abstract screening will be performed using [Rayyan](https://www.rayyan.ai/), a free, web-based tool that supports blinded and collaborative screening for systematic reviews.
+
+---
+
+## ✅ Abstract Inclusion Criteria
+
+Reviewers should mark **"Include"** for abstracts that meet **all** of the following:
+
+- Involve patients with **confirmed hepatocellular carcinoma (HCC)**.
+- Report **metastasis to the parotid or other salivary glands**.
+- Contain **diagnostic confirmation** of the metastatic site (e.g., imaging, pathology, or biopsy).
+- Are case reports, case series, observational studies, or clinical studies **documenting HCC metastasis to salivary or rare anatomical head/neck sites**.
+- Include systematic reviews or meta-analyses with relevant HCC-parotid data.
+- Are published in **any language**, with **no date restrictions**.
+- Provide **clinical details** about diagnosis, presentation, treatment, or outcomes of parotid/salivary gland metastasis from HCC.
+
+---
+
+## ❌ Abstract Exclusion Criteria
+
+Reviewers should mark **"Exclude"** if the abstract:
+
+- Does not involve **HCC** as the confirmed primary tumor.
+- Focuses **only** on common metastatic sites (e.g., lung, bone, lymph nodes) without specific mention of **parotid or salivary glands**.
+- Is an editorial, commentary, narrative review, or **conference abstract lacking extractable data**.
+- Describes **experimental, animal, or in vitro** research without human subjects.
+- Fails to provide enough information to confirm metastatic HCC involvement of the parotid/salivary glands.
+
+---
+
+## 🧭 Screening Instructions in Rayyan
+
+1. **Login** to Rayyan and open the shared project folder.
+2. Review each abstract **independently** and apply one of the following labels:
+   - ✅ **Include**
+   - ❌ **Exclude**
+   - ❓ **Maybe/Unclear**
+3. Use the **Comments** field to:
+   - Justify exclusions or ambiguous decisions.
+   - Flag duplicates or any article you suspect has already been included elsewhere.
+4. Do **not unblind** decisions until both reviewers have completed their screening.
+5. Articles labeled **"Maybe"** or with discordant votes will proceed to **consensus review**.
+
+---
+
+## ✍️ Notes
+
+- When in doubt, err on the side of **inclusion** — borderline abstracts can be reassessed during full-text review.
+- Consistency is key — use the criteria above to minimize reviewer variation.
+
+📁 _All abstracts included from this step will proceed to the `full_text_review/` stage._

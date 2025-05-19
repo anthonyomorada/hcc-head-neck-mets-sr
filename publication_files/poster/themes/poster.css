@@ -1,0 +1,267 @@
+/*!
+ * Marp default theme.
+ *
+ * @theme poster
+ *
+ * @auto-scaling true
+ * @size 38.1:54.2 38.1cm 54.2cm
+ * @size 540:769 1080px 1538px
+ * @size 16:9 1280px 720px
+ * @size 4:3 960px 720px
+ * @size 40:40 40in 40in
+ * @size 40:30 40in 30in
+ * @size 44:33 44in 33in
+ * @size 36:24 36in 24in
+ * @size 35:70 35in 70in
+ * @size 30:40 30in 40in
+ * @size 33:44 33in 44in
+ * @size 24:36 24in 36in
+ */
+
+/* the sizes above provide options for the size of the poster */
+/* to select one, e.g. use size: 44:33 in the Marp header in markdown*/
+
+@import 'default';
+
+/* OVERALL STRUCTURE AND TEXT */
+/* padding controls the size of the margin on the border of the entire poster */
+section {
+  width: 1433px; /* Match the width defined in the Markdown file */
+  height: 2051px; /* Match the height defined in the Markdown file */
+  padding: 0%; /* Add padding around the content */
+  box-sizing: border-box; /* Ensure padding is included in the width/height */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5cm; /* Add spacing between sections */
+  overflow: hidden; /* Prevent content from overflowing */
+  font-size: 20px; /* Adjust font size for readability on a TV */
+  justify-content: flex-start;
+  --nd-blue: #6FA5E1;
+  --left: #66c2a5;
+  --right: #fc8d62;
+}
+
+/* General text and bullets */
+/* line-height controls vertical line spacing */
+/* overflow: hidden makes it so that text outside the margins is hidden, keeping a clean
+margin */
+p,
+ul,
+li{
+  font-size: 20px; /* Standard text size for readability */
+  text-align: left;
+  line-height: 1; /* Increase line spacing for better readability */
+  overflow: hidden;
+}
+
+li {
+  padding-left: 1.5em;      /* Indent all lines */
+  text-indent: -1.5em;      /* Pull back the first line */
+}
+
+/* for making the superscript on affiliations of authors */
+.super {
+  vertical-align: super;
+  font-size: 14px
+}
+
+h1 { /* Title */
+  font-size: 34px; /* Large font for the title */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 { /* Section titles */
+  font-size: 20px; 
+  border-bottom: 6px solid #1d1a5d; /* Changed border color */
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* HEADER */
+/* Full-width image at the top of the poster */
+section,
+.header {
+  margin: 0;
+  padding: 0;
+}
+
+.full-width-header,
+.header,
+section {
+  box-sizing: border-box;
+}
+
+.full-width-header {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  object-fit: cover;
+}
+
+/* TEXT */
+/* Three-column layout */
+.col-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+  gap: 0.5cm; /* Ensure equal gap between all grid items */
+  margin-left: 0.5cm; /* Add margin on the left */
+  margin-right: 0.5cm; /* Add margin on the right */
+}
+
+/* Title box spanning the first two columns */
+.title-box {
+  grid-column: span 2; /* Span across the first two columns */
+  text-align: left;
+  padding: 0.5cm; /* Add padding inside the box */
+  background-color: #ffffff; /* Optional: Add a background color */
+  border: 1px solid #1d1a5d; /* Optional: Add a border */
+}
+
+/* id-box and logo-box matched to title height */
+.id-box .row1,
+.id-box .row2 {
+  text-align: left;
+  padding: 0.5cm; /* Add padding inside the box */
+  background-color: #ffffff; /* Optional: Add a background color */
+  border: 1px solid #1d1a5d; /* Optional: Add a border */
+  margin-bottom: 0.5cm; /* Add gap between the rows */
+  width: 100%; /* Ensure the rows fit the full width of the column */
+}
+
+.row2 img {
+  height: 100px; /* Maintain the aspect ratio */
+  display: block; /* Ensure the image behaves like a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.intro-box,
+.objectives-box,
+.method-box,
+.ref-box,
+.results-box,
+.conclusion-box,
+.acknowledgement-box,
+.contact-box {
+  border: 1px solid #1d1a5d;
+  padding: 0.5em;
+  background: #fff;
+  margin-bottom: 0; /* Remove margin, let grid gap handle spacing */
+}
+
+/* Minimal and clean list styling for poster boxes */
+.objectives-box ul,
+.ref-box ol,
+.ref-box ul {
+  list-style-position: inside;
+  margin: 0 0 0 1em;
+  padding: 0;
+}
+
+.objectives-box li,
+.ref-box li {
+  font-size: inherit;
+  line-height: 1;
+  padding-left: 0;
+  text-indent: 0;
+}
+
+.ref-box ol {
+  list-style-type: decimal; /* For ol, numbers */
+  padding-left: 0;
+}
+
+.objectives-box li,
+.ref-box li {
+  font-size: inherit;
+  line-height: 1;
+}
+
+.ref-box li {
+  font-size: inherit;
+  padding-left: 0;
+  text-indent: 0;
+}
+
+.ref-box {
+  grid-column: 1 / span 2; /* Start at column 1, span 2 columns */
+  font-size: 16px; /* Smaller font size for references */
+  line-height: 1.0; /* Slightly tighter line spacing */
+}
+
+.results-box {
+  grid-column: 2 / span 2; /* Spans columns 2 and 3 */
+  grid-row: 2 / span 2;    /* Spans two rows */
+}
+
+.results-columns {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Adjust ratio as needed */
+  gap: 0.5cm;
+  align-items: start;
+}
+
+.prisma-col img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Create an inline icon, e.g. github twitter etc. */
+img[alt~="icon"] {
+  display: inline;
+  margin: 0 0.125em;
+  padding: 0;
+  vertical-align: middle;
+  height: 30px;
+}
+
+img {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+/* Custom table styling for poster */
+table {
+  font-size: 12px;
+  margin: 0 auto 1em auto;
+  border: 1px solid #1d1a5d;
+}
+
+table th,
+table td {
+  border: 1px solid #1d1a5d;
+  text-align: center;
+}
+
+table th {
+  background-color: #1d1a5d;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer-gradient {
+  background: linear-gradient(to right, #d9238b, #6c2ba1);
+  width: 100%;
+  padding: 0.5em;
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+.qr-img {
+  width: 189px !important;
+  height: auto !important;
+  display: block;
+  margin: 0 auto;
+}

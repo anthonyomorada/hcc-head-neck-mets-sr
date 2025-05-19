@@ -1,0 +1,57 @@
+# Data Extraction Protocol for Systematic Review: HCC Metastasis to Head and Neck
+
+This document outlines the standardized procedure for data extraction in our systematic review of hepatocellular carcinoma (HCC) with metastasis to the head and neck region. All data should be extracted from eligible full-text articles that meet inclusion criteria after title/abstract screening and full-text review.
+
+---
+
+## 🔍 Data Extraction Overview
+
+Each row in the data spreadsheet corresponds to a **unique patient case** extracted from a published study. If a study includes multiple cases, each case should be represented in a separate row.
+
+### Extract the following variables for each case:
+
+| Column Name               | Description                                                                                  | Data Type        | Example                       |
+|--------------------------|----------------------------------------------------------------------------------------------|------------------|-------------------------------|
+| `Article_ID`             | Unique citation or identifier for the source article                                         | Categorical      | Kim_2022                      |
+| `Author`                 | First author of the article                                                                  | Categorical      | Kim                           |
+| `Year`                   | Year the article was published                                                               | Numerical        | 2022                          |
+| `Patient_ID`             | Unique patient ID within that article (e.g., Case 1, Patient A)                              | Categorical      | Case 1                        |
+| `Age`                    | Age of patient at diagnosis                                                                  | Numerical        | 61                            |
+| `Sex`                    | Biological sex of the patient                                                                | Categorical      | Male                          |
+| `Cirrhosis`              | Whether patient had cirrhosis                                                                | Categorical      | Yes                           |
+| `Immunocompromised`      | Status of immunocompromise (e.g., transplant, chemotherapy, HIV)                             | Categorical      | Liver transplant              |
+| `Primary_Tumor_Site`     | Segmental or lobar location of the original HCC in the liver                                 | Categorical      | Segment 4                     |
+| `Initial_Treatment`      | First-line treatment(s) for HCC                                                              | Categorical      | Resection                     |
+| `Recurrence_Timing`      | Interval from initial treatment to recurrence (in months)                                    | Numerical        | 24                            |
+| `Met_Site`               | Site of metastasis within the head and neck                                                  | Categorical      | Parotid gland                 |
+| `Biopsy_Method`          | Type of diagnostic method for confirming metastasis                                          | Categorical      | FNA                           |
+| `AFP_at_Recurrence`      | Alpha-fetoprotein level at time of recurrence (ng/mL)                                               | Numerical        | 300                           |
+| `Systemic_Treatment`     | Any systemic therapy given after metastasis diagnosis                                        | Categorical      | Sorafenib                     |
+| `Local_Treatment`        | Local therapy used for metastasis (e.g., surgery, RT)                                        | Categorical      | Surgery + radiation           |
+| `Immunosuppression_Type` | If transplant recipient, specify immunosuppressive regimen                                   | Categorical      | Tacrolimus + Mycophenolate    |
+| `Survival_Months`        | Survival time from recurrence/metastasis to death or last follow-up                         | Numerical        | 9                             |
+| `Vital_Status`           | Outcome at last follow-up                                                                    | Categorical      | Alive                         |
+| `Notes`                  | Free-text notes, including imaging findings, unusual pathology, or relevant clinical context | Text             | PD-L1 expression 3%, unclear margin status |
+
+---
+
+## ✅ Data Entry Instructions
+
+- **Be consistent with terminology** (e.g., use "Male"/"Female", not "M"/"F").
+- Use **"NA"** for fields that are **not available** in the paper.
+- Round numerical values **to the nearest whole number** unless decimal precision is relevant (e.g., AFP levels).
+- Use the **original terminology from the paper** wherever possible and clarify in the Notes if needed.
+
+---
+
+## 📦 Saving the Data
+
+- Use the standardized CSV template: `hcc-mets-hn-sr.csv`
+- Save your work frequently.
+- Back up your file on GitHub under the `/data/` folder.
+
+---
+
+## 👥 Contact
+
+For clarification, contact Anthony Morada or open an issue in the GitHub repository.

@@ -5,6 +5,8 @@
 Thumbs.db
 
 # Temporary/Backup files
+*.Rhistory
+*.RData
 *.bak
 *.tmp
 *.swp
